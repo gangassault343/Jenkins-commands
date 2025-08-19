@@ -1,3 +1,4 @@
+//Install Jenkins to EC2 instance
 sudo yum update –y
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
@@ -10,19 +11,18 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 
 
-
-
-
 //For obtaining initial password
 cat /var/lib/jenkins/secrets/initialAdminPassword
 
 //Plugins
 GIT
 
-Install git in EC2
+//Install git in EC2
 sudo yum install git -y
 sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
 sudo dnf install php php-cli php-mbstring php-xml -y
 sudo yum install php php-{pear,cgi,common,curl,mbstring,gd,mysqlnd,gettext,bcmath,json,xml,fpm,intl,zip,imap} -y
+sudo systemctl restart httpd
+chmod 777 /var/www/html
