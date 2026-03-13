@@ -1,0 +1,6 @@
+BaSIC Jenkins E-mail Notification
+smtp.gmail.com
+--> Advanced
+User Name  --> awslearnarun@gmail.com
+pass --> google app password
+SMTP Port  --> 587
