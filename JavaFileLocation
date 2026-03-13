@@ -1,0 +1,4 @@
+//Amend java project file for editing original java file 
+vi src/main/java/com/example/WebProjectApplication.java
+
+//Changes to be made and :wq
