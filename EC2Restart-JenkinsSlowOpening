@@ -1,0 +1,3 @@
+//If your EC2 instance is restarted and Jenkins IP is changed then do this before using jenkins
+sudo vi /var/lib/jenkins/jenkins.model.JenkinsLocationConfiguration.xml     -->
+//Restart Jenkins before using
